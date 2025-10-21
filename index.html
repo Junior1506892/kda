@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KDA School</title>
+  <style>
+    /* Reset and basic styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #0052cc;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 60px 40px;
+      background: #e6f0ff;
+      flex-wrap: wrap;
+    }
+    .hero img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .hero-text {
+      max-width: 600px;
+      padding: 20px;
+    }
+    .hero-text h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #003d99;
+    }
+    .hero-text p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Achievement Section */
+    .achievements {
+      background-color: #fff;
+      padding: 50px 40px;
+      text-align: center;
+    }
+    .achievements h2 {
+      font-size: 32px;
+      color: #0052cc;
+      margin-bottom: 30px;
+    }
+    .achievement-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .achievement-item {
+      background: #f0f4ff;
+      border-radius: 12px;
+      padding: 25px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .achievement-item:hover {
+      transform: translateY(-5px);
+    }
+    .achievement-item h3 {
+      margin-bottom: 10px;
+      color: #003366;
+    }
+    .achievement-item p {
+      color: #444;
+    }
+
+    /* About Section */
+    .about {
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .about h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #0052cc;
+    }
+    .about p {
+      font-size: 17px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      .achievement-list {
+        flex-direction: column;
+        align-items: center;
+      }
+      .achievement-item {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KDA School</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="School Building" />
+    <div class="hero-text">
+      <h2>Welcome to KDA School</h2>
+      <p>Empowering students with knowledge and skills for a brighter future. Join us in our journey to excellence and innovation in education.</p>
+    </div>
+  </section>
+
+  <section class="achievements" id="achievements">
+    <h2>Our Achievements</h2>
+    <div class="achievement-list">
+      <div class="achievement-item">
+        <h3>Academic Excellence</h3>
+        <p>Consistently ranked top 5 in state exams for the last 10 years.</p>
+      </div>
+      <div class="achievement-item">
+        <h3>Sports Championships</h3>
+        <p>Won regional and national level championships in multiple sports.</p>
+      </div>
+      <div class="achievement-item">
+        <h3>Community Service</h3>
+        <p>Over 1,000 hours of volunteer work from our student body annually.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About KDA School</h2>
+    <p>
+      Founded in 1995, KDA School has been dedicated to nurturing young minds through a blend of academics, arts, and athletics. Our dedicated faculty and vibrant student community create an environment where every student can thrive and discover their passions. We are committed to preparing leaders of tomorrow with the values of integrity, respect, and innovation.
+    </p>
+  </section>
+
+  <footer id="contact">
+    &copy; 2025 KDA School. All rights reserved. | Contact us: info@kdaschool.edu
+  </footer>
+</body>
+</html>
